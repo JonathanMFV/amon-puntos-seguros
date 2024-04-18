@@ -1,6 +1,6 @@
 # Proyecto Amón Puntos seguros
 
-Implementacion de una página web informativa para la comunidad de San José, Barrio Amón.
+Implementación de una página web informativa para la comunidad de San José, Barrio Amón.
 
 ## Funcionalidades
 
