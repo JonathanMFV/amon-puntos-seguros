@@ -4,7 +4,7 @@ export default function PuntosSegurosLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<section>
+		<section data-theme="black">
 			<div className="flex">
 				{children}
 			</div>

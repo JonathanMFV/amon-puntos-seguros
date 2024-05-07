@@ -3,8 +3,6 @@ import Image from 'next/image';
 import Contacts from "@/components/contacts-widget";
 import {title, subtitle} from '@/components/primitives';
 import clsx from 'clsx';
-import { color } from 'framer-motion';
-
 
 export default function Page(){
 
