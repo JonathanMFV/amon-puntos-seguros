@@ -1,4 +1,4 @@
-import { fontSans } from "@/config/fonts";
+
 import { title, subtitle } from "@/components/primitives";
 
 export default function Page(){

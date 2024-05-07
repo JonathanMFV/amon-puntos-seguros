@@ -1,4 +1,4 @@
-import { Providers } from "@/app/providers";
+
 export default function PreguntasFrecuentesLayout({
 	children,
 }: {
@@ -7,9 +7,7 @@ export default function PreguntasFrecuentesLayout({
 	return (
 		<section>
 			<div>
-				<Providers>
-					{children}
-				</Providers>
+				{children}
 			</div>
 		</section>
 	);
