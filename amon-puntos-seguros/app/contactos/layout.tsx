@@ -4,7 +4,7 @@ export default function ContactosLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<section data-theme="forest">
+		<section data-theme="black">
 			<div>
 				{children}
 			</div>
