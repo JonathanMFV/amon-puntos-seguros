@@ -1,14 +1,11 @@
-
 export default function PreguntasFrecuentesLayout({
-	children,
+    children,
 }: {
-	children: React.ReactNode;
+    children: React.ReactNode;
 }) {
-	return (
-		<section data-theme="black">
-			<div>
-				{children}
-			</div>
-		</section>
-	);
+    return (
+        <section data-theme="black">
+            <div>{children}</div>
+        </section>
+    );
 }

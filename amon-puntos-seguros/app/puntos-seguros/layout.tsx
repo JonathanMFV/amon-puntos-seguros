@@ -5,7 +5,7 @@ export default function PuntosSegurosLayout({
 }) {
 	return (
 		<section data-theme="black">
-			<div className="flex">
+			<div>
 				{children}
 			</div>
 		</section>
