@@ -28,7 +28,7 @@ export default function Page() {
                 <div className="flex items-center justify-center w-2 h-2 rounded-full border border-color-green-three mt-2" />
                 <div className="flex items-center justify-center w-2 h-2 rounded-full border border-color-green-three mt-2" />
                 <div className="flex items-center justify-center w-2 h-2 rounded-full border border-color-green-three mt-2" />
-                <div className="flex flex-row justify-center items-center w-[100%] lg:w-[30%] mt-4">
+                <div className="flex flex-row justify-center items-center w-[100%] sm:w-[50%] lg:w-[30%] mt-4">
                     <div className="card w-[100%] lg:w-[90%] h-[100%] bg-base-100 shadow-[0_0px_15px_-0px_rgba(0,0,0,0.3)] hover:shadow-[0_0px_30px_-0px_rgba(0,0,0,0.4)] hover:shadow-color-green-three transition-shadow duration-300 shadow-color-green-one border border-color-green-one rounded-lg">
                         <div className="card-body items-center">
                             <h2 className="card-title text-center text-color-green-one text-xs md:text-base">
@@ -55,7 +55,7 @@ export default function Page() {
                 <div className="flex items-center justify-center w-2 h-2 rounded-full border border-color-green-three mt-2" />
                 <div className="flex items-center justify-center w-2 h-2 rounded-full border border-color-green-three mt-2" />
                 <div className="flex items-center justify-center w-2 h-2 rounded-full border border-color-green-three mt-2" />
-                <div className="flex flex-row justify-center items-center w-[100%] lg:w-[50%] mt-4">
+                <div className="flex flex-row justify-center items-center w-[100%] md:w-[70%] lg:w-[50%] mt-4">
                     <div className="card w-[100%] lg:w-[90%] h-[100%] bg-base-100 shadow-[0_0px_15px_-0px_rgba(0,0,0,0.3)] hover:shadow-[0_0px_30px_-0px_rgba(0,0,0,0.4)] hover:shadow-color-green-three transition-shadow duration-300 shadow-color-green-one border border-color-green-one rounded-lg">
                         <div className="card-body items-center">
                             <h2 className="card-title text-center text-color-green-one text-xs md:text-base">
@@ -80,7 +80,7 @@ export default function Page() {
                         3
                     </p>
                 </div>
-                <div className="flex flex-row justify-center items-center w-[100%] lg:w-[40%] mt-4">
+                <div className="flex flex-row justify-center items-center w-[100%] sm:w-[70%] lg:w-[40%] mt-4">
                     <div className="card w-[100%] lg:w-[90%] h-[100%] bg-base-100 shadow-[0_0px_15px_-0px_rgba(0,0,0,0.3)] hover:shadow-[0_0px_30px_-0px_rgba(0,0,0,0.4)] hover:shadow-color-green-three transition-shadow duration-300 shadow-color-green-one border border-color-green-one rounded-lg">
                         <div className="card-body items-center">
                             <h2 className="card-title text-center text-color-green-one text-xs md:text-base">
@@ -92,7 +92,7 @@ export default function Page() {
                                 <div className="flex justify-center items-center w-1/2">
                                     <a
                                         href=""
-                                        className="btn border-color-green-one text-color-green-one hover:bg-color-green-one hover:text-black btn-xs sm:btn-sm rounded-lg bg-[7ac7a9] w-[90%]"
+                                        className="btn text-[9px] lg:text-[13px] border-color-green-one text-color-green-one hover:bg-color-green-one hover:text-black btn-xs sm:btn-sm rounded-lg bg-[7ac7a9] w-[90%]"
                                     >
                                         Llamar a la Policia
                                     </a>
@@ -100,7 +100,7 @@ export default function Page() {
                                 <div className="flex justify-center items-center w-1/2">
                                     <a
                                         href=""
-                                        className="btn border-color-green-one text-color-green-one hover:bg-color-green-one hover:text-black btn-xs sm:btn-sm rounded-lg bg-[7ac7a9] w-[90%]"
+                                        className="btn text-[9px] lg:text-[13px] border-color-green-one text-color-green-one hover:bg-color-green-one hover:text-black btn-xs sm:btn-sm rounded-lg bg-[7ac7a9] w-[90%]"
                                     >
                                         Llamar a los Bomberos
                                     </a>
@@ -108,7 +108,7 @@ export default function Page() {
                                 <div className="flex justify-center items-center w-1/2 mt-4">
                                     <a
                                         href=""
-                                        className="btn border-color-green-one text-color-green-one hover:bg-color-green-one hover:text-black btn-xs sm:btn-sm rounded-lg bg-[7ac7a9] w-[90%]"
+                                        className="btn text-[9px] lg:text-[13px] border-color-green-one text-color-green-one hover:bg-color-green-one hover:text-black btn-xs sm:btn-sm rounded-lg bg-[7ac7a9] w-[90%]"
                                     >
                                         Llamar a la Cruz Roja
                                     </a>
@@ -116,7 +116,7 @@ export default function Page() {
                                 <div className="flex justify-center items-center w-1/2 mt-4">
                                     <a
                                         href=""
-                                        className="btn border-color-green-one text-color-green-one hover:bg-color-green-one hover:text-black btn-xs sm:btn-sm rounded-lg bg-[7ac7a9] w-[90%]"
+                                        className="btn text-[9px] lg:text-[13px] border-color-green-one text-color-green-one hover:bg-color-green-one hover:text-black btn-xs sm:btn-sm rounded-lg bg-[7ac7a9] w-[90%]"
                                     >
                                         Llamar al 9-1-1
                                     </a>
@@ -126,8 +126,6 @@ export default function Page() {
                     </div>
                 </div>
             </div>
-
-
         </section>
     );
 }

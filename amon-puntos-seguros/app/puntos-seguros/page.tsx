@@ -5,10 +5,10 @@ import { title, subtitle } from "@/components/primitives";
 export default function Page() {
     return (
         <div className="flex">
-            <section className="flex flex-col gap-4 py-8 md:py-10 mt-24">
+            <section className="flex flex-col gap-4 py-8 md:py-10 mt-24 mx-4 sm:mx-12 md:mx-20 lg:mx-32">
                 {/* Section info */}
-                <div className="flex flex-row items-center mx-32">
-                    <div className="flex flex-col sm:items-start items-center mr-14">
+                <div className="flex flex-row items-center">
+                    <div className="flex flex-col sm:items-start items-center lg:mr-14">
                         <div className="flex flex-col">
                             <h1
                                 className={title({
@@ -31,14 +31,15 @@ export default function Page() {
                                     class: "sm:text-start text-center mt-5",
                                 })}
                             >
-                                Identificar los puntos de encuentro es importante en
-                                una posible evacuación,así se crean rutas de
-                                emergencia ante cualquier eventualidad.
+                                Identificar los puntos de encuentro es
+                                importante en una posible evacuación,así se
+                                crean rutas de emergencia ante cualquier
+                                eventualidad.
                             </p>
                         </div>
                     </div>
 
-                    <div className="hidden md:block">
+                    <div className="hidden lg:block">
                         <Image
                             src="/customers/RadarGreenLogo.png"
                             width={225}
@@ -50,7 +51,7 @@ export default function Page() {
                 </div>
 
                 {/* Section Map */}
-                <div className="flex flex-col justify-center items-start mt-20 mx-12 md:mx-20 lg:mx-32">
+                <div className="flex flex-col justify-center items-start mt-20">
                     <div className="">
                         <div className="">
                             <h1 className={title({ size: "sm" })}>
@@ -64,19 +65,20 @@ export default function Page() {
                 </div>
 
                 {/* Section Info */}
-                <div className="flex flex-col justify-between mx-12 md:mx-20 lg:mx-32 mt-10">
-                    <div className="flex flex-row">
+                <div className="flex flex-col justify-between">
+                    <div className="flex flex-col md:flex-row gap-5 mt-5 md:gap-0">
                         {/* Titulo */}
-                        <div className="w-1/3 mr-20">
+                        <div className="md:w-1/3 mr-20">
                             <p
                                 className={title({
                                     size: "sm",
                                 })}
                             >
-                                Parque Zoológico y Jardin Bootanico Simon Bolivar
+                                Parque Zoológico y Jardin Bootanico Simon
+                                Bolivar
                             </p>
                         </div>
-                        <div className="flex flex-col w-2/3">
+                        <div className="flex flex-col md:w-2/3">
                             {/* Caracteristicas */}
                             <div className="flex flex-col">
                                 <div>
@@ -90,17 +92,18 @@ export default function Page() {
                                 </div>
                                 <div className="mt-5">
                                     <ul>
-                                        <li className="list-disc list-inside">
+                                        <li className="list-disc list-inside text-[11px] md:text-base">
                                             Lugar amplio.
                                         </li>
-                                        <li className="list-disc list-inside">
-                                            Prevención de caída de infraestructura.
+                                        <li className="list-disc list-inside text-[11px] md:text-base">
+                                            Prevención de caída de
+                                            infraestructura.
                                         </li>
-                                        <li className="list-disc list-inside">
-                                            Alberga cantidad masiva de personas en
-                                            caso de emergencia.
+                                        <li className="list-disc list-inside text-[11px] md:text-base">
+                                            Alberga cantidad masiva de personas
+                                            en caso de emergencia.
                                         </li>
-                                        <li className="list-disc list-inside">
+                                        <li className="list-disc list-inside text-[11px] md:text-base">
                                             Solo un acceso.
                                         </li>
                                     </ul>

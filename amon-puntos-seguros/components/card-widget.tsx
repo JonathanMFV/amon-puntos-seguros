@@ -13,10 +13,10 @@ export function CustomCardOne() {
                             <h2 className="card-title text-color-green-one mt-5 text-xs md:text-base">
                                 {i.title}
                             </h2>
-                            <p className="text-xs md:text-sm">{i.text}</p>
+                            <p className="text-[10px] md:text-sm">{i.text}</p>
                             <div className="card-actions justify-end">
                                 <div>
-                                    <p className="text-color-green-one text-xs">
+                                    <p className="text-color-green-one text-[10px]">
                                         {i.key}
                                     </p>
                                 </div>
@@ -44,7 +44,7 @@ export function CustomCardTwo() {
                             <h2 className="card-title text-color-green-one mt-5 text-xs md:text-base">
                                 {i.title}
                             </h2>
-                            <p className="text-xs md:text-sm">{i.text}</p>
+                            <p className="text-[10px] md:text-sm">{i.text}</p>
                         </div>
                     </div>
                 </div>
