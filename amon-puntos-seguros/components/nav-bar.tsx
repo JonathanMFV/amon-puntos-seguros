@@ -4,7 +4,7 @@ import { siteConfig } from "./site";
 export default function Navbar() {
     return (
         <>
-            <div className="navbar bg-base-150">
+            <div className="navbar bg-base-150 fixed w-full z-50 top-0 bg-black">
                 <div className="navbar-start flex gap-x-4">
                     <div className="dropdown">
                         <div
@@ -57,7 +57,10 @@ export default function Navbar() {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <a className="btn border-color-green-one text-color-green-one hover:bg-color-green-one hover:text-black btn-xs sm:btn-sm rounded-lg bg-[7ac7a9]">
+                    <a
+                        href="/simulacro-virtual"
+                        className="btn border-color-green-one text-color-green-one hover:bg-color-green-one hover:text-black btn-xs sm:btn-sm rounded-lg bg-[7ac7a9]"
+                    >
                         Simulacro Virtual
                     </a>
                 </div>

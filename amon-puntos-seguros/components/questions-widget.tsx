@@ -1,10 +1,10 @@
-import { questions } from "./question";
+import { Info } from "./info";
 import { title } from "@/components/primitives";
 
 export default function Questions() {
     return (
         <>
-            {questions.navQuestions.map((i) => (
+            {Info.navQuestions.map((i) => (
                 <div key={i.tema} className="flex flex-row w-full">
                     <div className="w-1/2">
                         <p
