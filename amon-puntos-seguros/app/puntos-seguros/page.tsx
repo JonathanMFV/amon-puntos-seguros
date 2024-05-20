@@ -3,8 +3,7 @@ import Image from "next/image";
 import { title, subtitle } from "@/components/primitives";
 
 import React from "react";
-
-import Map from "@/components/map";
+import LeafletMap from "@/components/Map"
 
 export default function Page() {
     return (
@@ -55,7 +54,9 @@ export default function Page() {
                 </div>
 
                 {/* Section Map */}
-                <Map></Map>
+                <div>
+                    <LeafletMap></LeafletMap>
+                </div>
 
                 <div className="flex flex-col justify-center items-start mt-20">
                     <div className="">
