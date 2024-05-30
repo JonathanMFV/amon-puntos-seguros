@@ -54,7 +54,7 @@ export default function Page() {
         </div>
 
         {/* Section Map */}
-        <div>
+        <div className="h-[200px] sm:h-[350px] md:h-[500px] lg:h-[600px] xl:h-[700px] w-[100%] mt-5 bg-slate-500">
           <LeafletMap></LeafletMap>
         </div>
 
@@ -65,9 +65,6 @@ export default function Page() {
                 Seleccione el lugar a descubrir
               </h1>
             </div>
-          </div>
-          <div className="h-[200px] sm:h-[350px] md:h-[500px] lg:h-[600px] xl:h-[700px] w-[100%] mt-5 bg-slate-500">
-            {/* Aqui debe ir el mapa de openstreetmap */}
           </div>
         </div>
 
