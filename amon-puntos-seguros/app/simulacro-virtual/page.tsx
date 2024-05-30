@@ -1,6 +1,7 @@
-/* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
+"use-client";
+
 import { title, subtitle } from "@/components/primitives";
+import MapAPI from "@/components/Map";
 
 export default function Page() {
     return (
@@ -61,7 +62,8 @@ export default function Page() {
                             <h2 className="card-title text-center text-color-green-one text-xs md:text-base">
                                 Evacue al punto seguro mas cercano
                             </h2>
-                            <div className=" bg-slate-500 w-full h-[350px]"></div>
+                            <MapAPI />
+                            
                             <p className="text-xs md:text-sm text-center">
                                 Destino:
                             </p>
