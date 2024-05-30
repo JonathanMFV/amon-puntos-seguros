@@ -4,7 +4,7 @@ import Image from "next/image";
 import { title, subtitle } from "@/components/primitives";
 
 import React from "react";
-import MapAPI from "@/components/Map";
+import MapPoints from "@/components/Map-Points";
 
 export default function Page() {
     return (
@@ -64,9 +64,7 @@ export default function Page() {
                             </h1>
                         </div>
                     </div>
-                    <div className="h-[200px] z-0 sm:h-[350px] md:h-[500px] lg:h-[600px] xl:h-[700px] w-[100%] mt-5 bg-slate-500">
-                        <MapAPI />
-                    </div>
+                    <MapPoints />
                 </div>
 
                 {/* Section Info */}

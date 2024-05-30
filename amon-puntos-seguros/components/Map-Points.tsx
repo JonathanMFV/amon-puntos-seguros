@@ -21,7 +21,7 @@ const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), {
     ssr: false,
 });
 
-export default function MapAPI() {
+export default function MapPoints() {
     const [location, setLocation] = useState({ lat: 51.505, lng: -0.09 }); // Valores por defecto
     const [destiny, setDestiny] = useState({ lat: 9.938397, lng: -84.075372 });
     const [hasLocation, setHasLocation] = useState(false);
@@ -46,7 +46,7 @@ export default function MapAPI() {
     }, []);
 
     return (
-        <div className="w-full z-0 h-[400px]">
+        <div className=" h-[200px] z-0 sm:h-[350px] md:h-[500px] lg:h-[600px] xl:h-[700px] w-[100%] mt-5">
             <div className="w-[100%] h-[100%]">
                 <MapContainer
                     className="w-[100%] h-[100%]"

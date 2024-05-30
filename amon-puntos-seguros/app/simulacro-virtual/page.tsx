@@ -62,8 +62,8 @@ export default function Page() {
                             <h2 className="card-title text-center text-color-green-one text-xs md:text-base">
                                 Evacue al punto seguro mas cercano
                             </h2>
-                            <MapAPI />
                             
+                            <MapAPI />
                             <p className="text-xs md:text-sm text-center">
                                 Destino:
                             </p>
