@@ -1,7 +1,8 @@
-"use-client";
+"use client";
 
 import { title, subtitle } from "@/components/primitives";
 import MapAPI from "@/components/Map";
+import React, { useEffect, useState } from "react";
 
 export default function Page() {
     return (
@@ -62,8 +63,16 @@ export default function Page() {
                             <h2 className="card-title text-center text-color-green-one text-xs md:text-base">
                                 Evacue al punto seguro mas cercano
                             </h2>
-                            
+
                             <MapAPI />
+                            <button className="btn border-color-green-one text-color-green-one hover:bg-color-green-one hover:text-black btn-xs sm:btn-sm rounded-lg bg-[7ac7a9]">
+                                <a
+                                    href="https://www.google.com/maps/dir/?api=1&destination=9.938397,-84.075372"
+                                    target="_blank"
+                                >
+                                    Ir a Google Maps
+                                </a>
+                            </button>
                             <p className="text-xs md:text-sm text-center">
                                 Destino:
                             </p>
@@ -93,7 +102,7 @@ export default function Page() {
                             <div className="flex flex-wrap w-full mt-4">
                                 <div className="flex justify-center items-center w-1/2">
                                     <a
-                                        href=""
+                                        href="tel:+50622224171"
                                         className="btn text-[9px] lg:text-[13px] border-color-green-one text-color-green-one hover:bg-color-green-one hover:text-black btn-xs sm:btn-sm rounded-lg bg-[7ac7a9] w-[90%]"
                                     >
                                         Llamar a la Policia
@@ -101,7 +110,7 @@ export default function Page() {
                                 </div>
                                 <div className="flex justify-center items-center w-1/2">
                                     <a
-                                        href=""
+                                        href="tel:+50622207880"
                                         className="btn text-[9px] lg:text-[13px] border-color-green-one text-color-green-one hover:bg-color-green-one hover:text-black btn-xs sm:btn-sm rounded-lg bg-[7ac7a9] w-[90%]"
                                     >
                                         Llamar a los Bomberos
@@ -109,7 +118,7 @@ export default function Page() {
                                 </div>
                                 <div className="flex justify-center items-center w-1/2 mt-4">
                                     <a
-                                        href=""
+                                        href="tel:+50625425004"
                                         className="btn text-[9px] lg:text-[13px] border-color-green-one text-color-green-one hover:bg-color-green-one hover:text-black btn-xs sm:btn-sm rounded-lg bg-[7ac7a9] w-[90%]"
                                     >
                                         Llamar a la Cruz Roja
@@ -117,7 +126,7 @@ export default function Page() {
                                 </div>
                                 <div className="flex justify-center items-center w-1/2 mt-4">
                                     <a
-                                        href=""
+                                        href="tel:+506911"
                                         className="btn text-[9px] lg:text-[13px] border-color-green-one text-color-green-one hover:bg-color-green-one hover:text-black btn-xs sm:btn-sm rounded-lg bg-[7ac7a9] w-[90%]"
                                     >
                                         Llamar al 9-1-1

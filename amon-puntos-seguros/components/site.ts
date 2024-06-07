@@ -20,7 +20,7 @@ export const siteConfig = {
         },
         {
             label: "Preguntas Frecuentes",
-            href: "/preguntas-frecuentes"
+            href: "/mapa-sismos"
         }
 
     ]
