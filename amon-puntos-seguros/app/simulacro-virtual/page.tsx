@@ -5,6 +5,15 @@ import MapAPI from "@/components/Map";
 import React, { useEffect, useState } from "react";
 
 export default function Page() {
+    const [pos, setPos] = useState({
+        name: "Destino",
+        latitude: 9.938397,
+        longitude: -84.075372,
+    });
+
+    const onChangePosUrl = (value: any) => {
+        setPos(value);
+    };
     return (
         <section className="flex flex-col gap-4 py-8 md:py-10 mt-10">
             {/* Section info */}
@@ -64,22 +73,15 @@ export default function Page() {
                                 Evacue al punto seguro mas cercano
                             </h2>
 
-                            <MapAPI />
+                            <MapAPI changePosUrl={onChangePosUrl} />
                             <button className="btn border-color-green-one text-color-green-one hover:bg-color-green-one hover:text-black btn-xs sm:btn-sm rounded-lg bg-[7ac7a9]">
                                 <a
-                                    href="https://www.google.com/maps/dir/?api=1&destination=9.938397,-84.075372"
+                                    href={`https://www.google.com/maps/dir/?api=1&destination=${pos.latitude},${pos.longitude}`}
                                     target="_blank"
                                 >
                                     Ir a Google Maps
                                 </a>
                             </button>
-                            <p className="text-xs md:text-sm text-center">
-                                Destino:
-                            </p>
-                            <p className="text-xs font-bold md:text-sm text-center">
-                                Parque Zoológico y Jardin Bootanico Simon
-                                Bolivar
-                            </p>
                         </div>
                     </div>
                 </div>

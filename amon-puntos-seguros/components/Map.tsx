@@ -21,9 +21,79 @@ const Popup = dynamic(() => import("react-leaflet").then((mod) => mod.Popup), {
     ssr: false,
 });
 
-export default function MapAPI() {
-    const [location, setLocation] = useState({ lat: 51.505, lng: -0.09 }); // Valores por defecto
-    const [destiny, setDestiny] = useState({ lat: 9.938397, lng: -84.075372 });
+interface Location {
+    name?: String;
+    latitude: number;
+    longitude: number;
+}
+
+const locations: Location[] = [
+    {
+        name: "Parque Zoológico y Jardín Botánico Nacional Simón Bolívar",
+        latitude: 9.938649401136207,
+        longitude: -84.07328430635145,
+    },
+    {
+        name: "Estación de Bomberos Metropolitana Norte",
+        latitude: 9.939547477912928,
+        longitude: -84.07850067831288,
+    },
+    {
+        name: "Hospital Rafael Angel Calderon Guardia",
+        latitude: 9.937000628002455,
+        longitude: -84.06953137147669,
+    },
+    {
+        name: "Parque Morazán",
+        latitude: 9.935669072003385,
+        longitude: -84.07551806224133,
+    },
+    {
+        name: "Parque España",
+        latitude: 9.93616576415917,
+        longitude: -84.07364051592039,
+    },
+    {
+        name: "Monumento Nacional",
+        latitude: 9.934946103226553,
+        longitude: -84.07076811677182,
+    },
+];
+
+function haversineDistance(loc1: Location, loc2: Location): number {
+    const toRadians = (degrees: number) => (degrees * Math.PI) / 180;
+
+    const R = 6371;
+    const dLat = toRadians(loc2.latitude - loc1.latitude);
+    const dLon = toRadians(loc2.longitude - loc1.longitude);
+
+    const lat1 = toRadians(loc1.latitude);
+    const lat2 = toRadians(loc2.latitude);
+
+    const a =
+        Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+        Math.sin(dLon / 2) *
+            Math.sin(dLon / 2) *
+            Math.cos(lat1) *
+            Math.cos(lat2);
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+
+    return R * c; // Retorna la distancia en kilómetros
+}
+
+export default function MapAPI({ changePosUrl }) {
+    const defaultLocation: Location = {
+        latitude: 0,
+        longitude: 0,
+        name: "Ubicación por defecto",
+    };
+    const defaultDestiny: Location = {
+        latitude: 10,
+        longitude: 10,
+        name: "Destino por defecto",
+    };
+    const [location, setLocation] = useState<Location>(defaultLocation);
+    const [destiny, setDestiny] = useState<Location>(defaultDestiny);
     const [hasLocation, setHasLocation] = useState(false);
 
     useEffect(() => {
@@ -31,8 +101,9 @@ export default function MapAPI() {
             navigator.geolocation.getCurrentPosition(
                 (position) => {
                     setLocation({
-                        lat: position.coords.latitude,
-                        lng: position.coords.longitude,
+                        name: "GeoLocation",
+                        latitude: position.coords.latitude,
+                        longitude: position.coords.longitude,
                     });
                     setHasLocation(true);
                 },
@@ -45,12 +116,34 @@ export default function MapAPI() {
         }
     }, []);
 
+    useEffect(() => {
+        if (hasLocation) {
+            try {
+                let minDistance = haversineDistance(location, locations[0]);
+                let closestLocation = locations[0];
+                for (const loc of locations) {
+                    const distance = haversineDistance(location, loc);
+                    if (distance < minDistance) {
+                        closestLocation = loc;
+                        minDistance = distance;
+                    }
+                }
+                setDestiny(closestLocation);
+                
+            } catch (error) {
+                console.error("Error obteniendo el destino.", error);
+            }
+        }
+    }, [hasLocation, location]);
+
+    changePosUrl(destiny);
+
     return (
         <div className="w-full z-0 h-[400px]">
             <div className="w-[100%] h-[100%]">
                 <MapContainer
                     className="w-[100%] h-[100%]"
-                    center={[destiny.lat, destiny.lng]}
+                    center={[destiny.latitude, destiny.longitude]}
                     zoom={16}
                     scrollWheelZoom
                 >
@@ -59,8 +152,10 @@ export default function MapAPI() {
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                     />
                     {hasLocation && (
-                        <Marker position={[destiny.lat, destiny.lng]}>
-                            <Popup>Estás aquí.</Popup>
+                        <Marker
+                            position={[destiny.latitude, destiny.longitude]}
+                        >
+                            <Popup>{destiny.name}</Popup>
                         </Marker>
                     )}
                 </MapContainer>

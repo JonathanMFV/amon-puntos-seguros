@@ -170,11 +170,6 @@ export default function MapPoints({ changeSelectedMarker }) {
               attribution="&copy; <a href='https://www.openstreetmap.org/copyright'>OpenStreetMap</a> contributors"
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            {hasLocation && (
-              <Marker position={[destiny.lat, destiny.lng]}>
-                <Popup>Estás aquí.</Popup>
-              </Marker>
-            )}
             {places.map((place) => (
               <Marker
                 key={place.id}

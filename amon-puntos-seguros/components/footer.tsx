@@ -16,7 +16,10 @@ export default function Footer() {
                             <div className="flex flex-row mt-3">
                                 <ul className="flex flex-row gap-x-3 items-center justify-center">
                                     <li className="flex w-10 h-10 items-center justify-center rounded-full border border-gray-400 hover:border-white">
-                                        <a href="https://www.facebook.com/AmonCultural/">
+                                        <a
+                                            href="https://www.facebook.com/AmonCultural/"
+                                            target="_blank"
+                                        >
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 width="24"
@@ -34,7 +37,10 @@ export default function Footer() {
                                         </a>
                                     </li>
                                     <li className="flex w-10 h-10 items-center justify-center rounded-full border border-gray-400 hover:border-white">
-                                        <a href="https://www.instagram.com/amon.cr/">
+                                        <a
+                                            href="https://www.instagram.com/amon.cr/"
+                                            target="_blank"
+                                        >
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 width="24"
@@ -66,7 +72,10 @@ export default function Footer() {
                                         </a>
                                     </li>
                                     <li className="flex w-10 h-10 items-center justify-center rounded-full border border-gray-400 hover:border-white">
-                                        <a href="https://www.youtube.com/channel/UCBmjpHiFTem5iwBpz6fe5Ug">
+                                        <a
+                                            href="https://www.youtube.com/channel/UCBmjpHiFTem5iwBpz6fe5Ug"
+                                            target="_blank"
+                                        >
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 width="27"
@@ -85,7 +94,10 @@ export default function Footer() {
                                         </a>
                                     </li>
                                     <li className="flex w-10 h-10 items-center justify-center rounded-full border border-gray-400 hover:border-white">
-                                        <a href="https://amon.cr/amon-cultural/">
+                                        <a
+                                            href="https://amon.cr/amon-cultural/"
+                                            target="_blank"
+                                        >
                                             <svg
                                                 xmlns="http://www.w3.org/2000/svg"
                                                 width="24"

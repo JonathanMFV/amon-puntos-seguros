@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { title } from "@/components/primitives";
 import React from "react";
@@ -11,7 +11,6 @@ import { map } from "leaflet";
 const url = "http://www.ovsicori.una.ac.cr/sistemas/sentidos_map/index.php";
 
 export default async function Page() {
-
     const fetchData = async (url: string) => {
         try {
             const response = await axios.get(url);
@@ -24,13 +23,13 @@ export default async function Page() {
 
     const html = await fetchData(url);
     const $ = cheerio.load(html);
-    type MapItem = Map<String,String>
+    type MapItem = Map<String, String>;
     const listOfMaps: MapItem[] = [];
 
     $("tr").each((index, element) => {
         const columns = $(element).find("td");
         if (index > 1) {
-            const map = new Map<String,String>
+            const map = new Map<String, String>();
             map.set("Fecha", $(columns[0]).text());
             map.set("Hora", $(columns[1]).text());
             map.set("Magnitud", $(columns[2]).text());
@@ -44,7 +43,7 @@ export default async function Page() {
         }
     });
 
-    console.log(listOfMaps)
+    console.log(listOfMaps);
 
     return (
         <section className="flex flex-col gap-4 py-8 md:py-10 mt-10 mx-4 sm:mx-12 md:mx-20 lg:mx-32">

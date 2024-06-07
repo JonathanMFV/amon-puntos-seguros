@@ -46,12 +46,12 @@ export default function Navbar() {
                     <ul className="menu menu-horizontal px-1">
                         {siteConfig.navItems.map((i) => (
                             <li key={i.href}>
-                                <Link
+                                <a
                                     href={i.href}
                                     className="rounded-lg gap-x-3"
                                 >
                                     {i.label}
-                                </Link>
+                                </a>
                             </li>
                         ))}
                     </ul>
