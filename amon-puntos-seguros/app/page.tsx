@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { title, subtitle } from "@/components/primitives";
+import "leaflet/dist/leaflet.css";
 
 export default function Home() {
   return (
