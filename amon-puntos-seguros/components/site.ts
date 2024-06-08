@@ -4,24 +4,23 @@ export const siteConfig = {
     navItems: [
         {
             label: "Inicio",
-            href: "/"
+            href: "/",
         },
         {
             label: "Puntos Seguros",
-            href: "/puntos-seguros"
+            href: "/puntos-seguros",
+        },
+        {
+            label: "Mapa Sismologico",
+            href: "/mapa-sismos",
         },
         {
             label: "Protocolos a Seguir",
-            href: "/protocolos"
+            href: "/protocolos",
         },
         {
             label: "Contactos",
-            href: "/contactos"
+            href: "/contactos",
         },
-        {
-            label: "Preguntas Frecuentes",
-            href: "/mapa-sismos"
-        }
-
-    ]
-}
+    ],
+};

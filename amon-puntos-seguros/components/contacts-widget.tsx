@@ -9,6 +9,7 @@ const info = [
         number: "+506 22224171",
         bg_image: "/customers/FuerzaPublicaIlustracion.jpg",
         icon: "/customers/FuerzaPublicaIcon.png",
+        href: "tel:+50622224171",
     },
     {
         id: "1",
@@ -16,6 +17,7 @@ const info = [
         number: "+506 22207880",
         bg_image: "/customers/BomberosIlustracion.png",
         icon: "/customers/BomberosIcon.png",
+        href: "tel:+50622207880",
     },
     {
         id: "3",
@@ -23,6 +25,7 @@ const info = [
         number: "+506 25425004",
         bg_image: "/customers/CruzRojaIlustracion.jpg",
         icon: "/customers/CruzRojaIcon.gif",
+        href: "tel:+50625425004",
     },
     {
         id: "4",
@@ -30,6 +33,7 @@ const info = [
         number: "991",
         bg_image: "/customers/911Ilustracion.avif",
         icon: "/customers/911Icon.gif",
+        href: "tel:+506911",
     },
 ];
 
@@ -37,8 +41,9 @@ export default function Contacts() {
     return (
         <>
             {info.map((i) => (
-                <div
+                <a
                     key={i.title}
+                    href={i.href}
                     className={clsx(
                         "flex flex-row items-center justify-around relative min-h-60 min-w-[325px] mt-14",
                         {
@@ -71,7 +76,7 @@ export default function Contacts() {
                             <p className={subtitle()}>{i.number}</p>
                         </div>
                     </div>
-                </div>
+                </a>
             ))}
         </>
     );
