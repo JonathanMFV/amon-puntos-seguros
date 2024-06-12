@@ -13,7 +13,11 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html className="bg-black mb-32"  lang="en">
+        <html
+            data-theme="black"
+            className="mb-32 bg-gradient-circular"
+            lang="en"
+        >
             <body>
                 <Navbar />
                 {children}

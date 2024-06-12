@@ -15,7 +15,7 @@ export default function Page() {
         setPos(value);
     };
     return (
-        <section className="flex flex-col bg-black text-white py-32 px-[50px] sm:px-[120px] lg:py-40 lg:px-[60px] xl:px-[180px]">
+        <section className="bg-gradient-circular-2 flex flex-col bg-black text-white py-32 px-[50px] sm:px-[120px] lg:py-40 lg:px-[60px] xl:px-[180px]">
             {/* Section info */}
             <div className="flex flex-col justify-center items-center">
                 <div>
@@ -73,7 +73,7 @@ export default function Page() {
                                 Evacue al punto seguro mas cercano
                             </h2>
 
-                            <MapAPI changePosUrl={onChangePosUrl}/>
+                            <MapAPI changePosUrl={onChangePosUrl} />
                             <button className="btn border-color-green-one text-color-green-one hover:bg-color-green-one hover:text-black btn-xs sm:btn-sm rounded-lg bg-[7ac7a9]">
                                 <a
                                     href={`https://www.google.com/maps/dir/?api=1&destination=${pos.latitude},${pos.longitude}`}

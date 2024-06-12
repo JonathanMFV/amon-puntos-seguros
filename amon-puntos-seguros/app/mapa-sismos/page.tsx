@@ -23,7 +23,19 @@ const Page = () => {
 
     return (
         <section className="flex flex-col py-32 px-[50px] sm:px-[120px] lg:py-40 lg:px-[60px] xl:px-[180px]">
-            <h1 className={title({ size: "sm" })}>Mapa de Sismos Recientes</h1>
+            <div className="flex flex-row">
+                <h1 className={title({ size: "sm" })}>Mapa de&nbsp;</h1>
+                <h1
+                    className={title({
+                        size: "sm",
+                        class: "hover:animate-shake",
+                        color: "green",
+                    })}
+                >
+                    Sismos&nbsp;
+                </h1>
+                <h1 className={title({ size: "sm" })}>Recientes</h1>
+            </div>
             <div className="z-0">
                 <MapSismos listOfMaps={listOfMaps} />
             </div>

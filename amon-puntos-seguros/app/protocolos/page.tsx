@@ -5,18 +5,18 @@ export default function Page() {
     return (
         <section
             data-theme="black"
-            className="flex flex-col py-32 px-[50px] sm:px-[120px] lg:py-40 lg:px-[60px] xl:px-[180px]"
+            className="bg-spots flex flex-col py-32 px-[50px] sm:px-[120px] lg:py-40 lg:px-[60px] xl:px-[180px]"
         >
             <div className="flex flex-col items-center">
-                <h1 className={title({ class: "text-center" })}>
+                <h1 className={title({ class: "text-center", color: "green" })}>
                     Protocolos Establecidos
                 </h1>
                 <h1 className={title({ class: "text-center" })}>
                     Ante una Eventual Emergencia Sismológica
                 </h1>
                 <h2 className={subtitle({ class: "mt-4 text-center" })}>
-                    Los mecanismos de emergencia son importantes para atacarlos en busca de
-                    tener una comunidad organizada y prevenida ante
+                    Los mecanismos de emergencia son importantes para atacarlos
+                    en busca de tener una comunidad organizada y prevenida ante
                     cualquier situación que los involucre.
                 </h2>
             </div>

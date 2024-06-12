@@ -45,7 +45,7 @@ export default function Contacts() {
                     key={i.title}
                     href={i.href}
                     className={clsx(
-                        "flex flex-row items-center justify-around relative min-h-60 min-w-[325px] mt-14",
+                        "flex flex-row rounded-lg items-center justify-around relative min-h-60 min-w-[325px] mt-14 hover:shadow-[0_0px_30px_-0px_rgba(0,0,0,0.4)] hover:shadow-color-green-three transition-shadow duration-300",
                         {
                             "md:w-2/5": true,
                             "md:mt-24": true,
@@ -53,7 +53,7 @@ export default function Contacts() {
                     )}
                 >
                     <div
-                        className="absolute inset-0 bg-cover rounded-lg overflow-hidden"
+                        className="absolute inset-0 bg-cover overflow-hidden"
                         style={{
                             backgroundImage: `url(${i.bg_image})`,
                             opacity: 0.4,

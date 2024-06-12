@@ -4,8 +4,8 @@ export default function SimulacroVirtualLayout({
     children: React.ReactNode;
 }) {
     return (
-        <section>
-                {children}
+        <section data-theme="black" className="bg-black">
+            {children}
         </section>
     );
 }

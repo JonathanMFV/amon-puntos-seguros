@@ -4,7 +4,7 @@ import "leaflet/dist/leaflet.css";
 
 export default function Home() {
     return (
-        <section className="bg-black text-white flex flex-col py-32 px-[50px] sm:px-[120px] lg:py-40 lg:px-[60px] xl:px-[180px]">
+        <section className="bg-spots text-white flex flex-col py-32 px-[50px] sm:px-[120px] lg:py-40 lg:px-[60px] xl:px-[180px]">
             {/* Section Info */}
             <div className="flex flex-col items-center">
                 <div className="flex flex-col items-center justify-center">
@@ -15,7 +15,7 @@ export default function Home() {
                     >
                         Este Seguro ante una
                     </h1>
-                    <div className="flex flex-row md:mt-3">
+                    <div className="flex flex-row md:mt-3 pb-2">
                         <h1
                             className={title({
                                 class: "text-center",
@@ -26,10 +26,10 @@ export default function Home() {
                         </h1>
                         <h1
                             className={title({
-                                class: "text-center",
+                                class: "sm:text-start text-center pb-2 hover:animate-shake",
+                                color: "green",
                             })}
                         >
-                            {" "}
                             Sismológica
                         </h1>
                     </div>

@@ -1,6 +1,6 @@
 export default function Footer() {
     return (
-        <div className="bg-black text-white">
+        <div data-theme="black " className="text-white">
             <div className="flex flex-row justify-start px-[50px] sm:px-[120px] lg:px-[60px] xl:px-[180px]">
                 <div className="flex-col w-full">
                     <div className="flex flex-col lg:flex-row gap-20 md:gap-36">

@@ -5,7 +5,9 @@ export default function ProtocolosLayout({
 }) {
     return (
         <section>
-            <div data-theme="black">{children}</div>
+            <div data-theme="black" className="bg-black">
+                {children}
+            </div>
         </section>
     );
 }

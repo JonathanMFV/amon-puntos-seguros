@@ -28,7 +28,7 @@ export default function Page() {
         setSelectedPlace(value);
     };
     return (
-        <section className="flex flex-col py-32 px-[50px] sm:px-[120px] lg:py-40 lg:px-[60px] xl:px-[180px]">
+        <section className="bg-gradient-circular text-white flex flex-col py-32 px-[50px] sm:px-[120px] lg:py-40 lg:px-[60px] xl:px-[180px]">
             {/* Section info */}
             <div className="flex flex-row items-center">
                 <div className="flex flex-col sm:items-start items-center">
