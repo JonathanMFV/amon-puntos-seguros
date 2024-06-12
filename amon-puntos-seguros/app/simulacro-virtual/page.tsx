@@ -15,7 +15,7 @@ export default function Page() {
         setPos(value);
     };
     return (
-        <section className="flex flex-col gap-4 py-8 md:py-10 mt-10">
+        <section className="flex flex-col gap-4 py-8 md:py-10 mt-10 bg-black text-white">
             {/* Section info */}
             <div className="flex flex-col justify-center items-center">
                 <div>

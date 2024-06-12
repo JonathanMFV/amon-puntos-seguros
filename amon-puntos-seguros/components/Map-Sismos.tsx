@@ -56,10 +56,11 @@ export default function MapSismos({ listOfMaps }) {
                             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         />
                         {listOfMaps.map((map, index) => (
-                            <div>
+                            <div key={index}>
                                 {Object.entries(map).map(
                                     ([key, value], idx) => (
                                         <Marker
+                                            key={idx}
                                             position={[
                                                 Number(map.Latitud),
                                                 Number(map.Longitud),

@@ -3,7 +3,10 @@ import { CustomCardOne, CustomCardTwo } from "@/components/card-widget";
 
 export default function Page() {
     return (
-        <section className="flex flex-col gap-4 py-8 md:py-10 mt-10 mx-4 sm:mx-12 md:mx-20 lg:mx-32">
+        <section
+            data-theme="black"
+            className="flex flex-col gap-4 py-8 md:py-10 mt-10 mx-4 sm:mx-12 md:mx-20 lg:mx-32"
+        >
             <div className="flex flex-col items-center">
                 <h1 className={title({ class: "text-center" })}>
                     Protocolos Establecidos

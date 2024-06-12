@@ -22,7 +22,7 @@ const config: Config = {
         },
     },
     daisyui: {
-        themes: ["light", "dark", "forest", "black"],
+        themes: [ "black", "cupcake"],
     },
     plugins: [require("daisyui")],
 };

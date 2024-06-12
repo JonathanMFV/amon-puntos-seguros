@@ -5,9 +5,7 @@ export default function PuntosSegurosLayout({
 }) {
 	return (
 		<section data-theme="black">
-			<div>
-				{children}
-			</div>
+			{children}
 		</section>
 	);
 }

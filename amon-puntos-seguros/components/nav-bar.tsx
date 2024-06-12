@@ -4,7 +4,7 @@ import { siteConfig } from "./site";
 export default function Navbar() {
     return (
         <>
-            <div className="navbar bg-base-150 fixed w-full z-50 top-0 bg-black">
+            <div className="navbar text-neutral-content bg-black fixed w-full z-50 top-0 ">
                 <div className="navbar-start flex gap-x-4">
                     <div className="dropdown">
                         <div
@@ -46,10 +46,7 @@ export default function Navbar() {
                     <ul className="menu menu-horizontal px-1">
                         {siteConfig.navItems.map((i) => (
                             <li key={i.href}>
-                                <a
-                                    href={i.href}
-                                    className="rounded-lg gap-x-3"
-                                >
+                                <a href={i.href} className="rounded-lg gap-x-3">
                                     {i.label}
                                 </a>
                             </li>
