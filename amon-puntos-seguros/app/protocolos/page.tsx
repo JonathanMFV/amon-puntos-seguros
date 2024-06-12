@@ -3,17 +3,20 @@ import { CustomCardOne, CustomCardTwo } from "@/components/card-widget";
 
 export default function Page() {
     return (
-        <section className="flex flex-col gap-4 py-8 md:py-10 mt-10 mx-4 sm:mx-12 md:mx-20 lg:mx-32">
+        <section
+            data-theme="black"
+            className="bg-spots flex flex-col py-32 px-[50px] sm:px-[120px] lg:py-40 lg:px-[60px] xl:px-[180px]"
+        >
             <div className="flex flex-col items-center">
-                <h1 className={title({ class: "text-center" })}>
+                <h1 className={title({ class: "text-center", color: "green" })}>
                     Protocolos Establecidos
                 </h1>
                 <h1 className={title({ class: "text-center" })}>
-                    Ante una Eventual Emergencia Sismologica
+                    Ante una Eventual Emergencia Sismológica
                 </h1>
                 <h2 className={subtitle({ class: "mt-4 text-center" })}>
-                    Los mecanismos de emergencia son importante atacarlos para
-                    lograr tener una comunidad organizada y prevenida ante
+                    Los mecanismos de emergencia son importantes para atacarlos
+                    en busca de tener una comunidad organizada y prevenida ante
                     cualquier situación que los involucre.
                 </h2>
             </div>

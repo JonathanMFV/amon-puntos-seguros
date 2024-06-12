@@ -4,7 +4,7 @@ export default function MapaLayout({
     children: React.ReactNode;
 }) {
     return (
-        <section>
+        <section data-theme="black" className="bg-black">
             <div>{children}</div>
         </section>
     );

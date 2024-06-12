@@ -33,7 +33,7 @@ export default function MapPoints({ changeSelectedMarker }) {
       characteristics: [
         "Lugar amplio.",
         "Prevención de caída de infraestructura.",
-        "Alberga cantidad masiva de personas en caso de emergencia.",
+        "Alberga una cantidad masiva de personas en caso de emergencia.",
         "Solo un acceso.",
       ],
     },
@@ -51,7 +51,7 @@ export default function MapPoints({ changeSelectedMarker }) {
     },
     {
       id: 3,
-      name: "Hospital Rafael Angel Calderon Guardia",
+      name: "Hospital Rafael Ángel Calderón Guardia",
       lat: 9.937000628002455,
       long: -84.06953137147669,
       images: [
@@ -78,7 +78,7 @@ export default function MapPoints({ changeSelectedMarker }) {
         "Diferentes accesos.",
         "Abierto 24/7.",
         "Potencial punto de reunión",
-        "Zonas verdes",
+        "Zonas verdes.",
       ],
     },
     {
@@ -95,7 +95,7 @@ export default function MapPoints({ changeSelectedMarker }) {
         "Diferentes accesos.",
         "Abierto 24/7.",
         "Potencial punto de reunión",
-        "Zonas verdes",
+        "Zonas verdes.",
       ],
     },
     {
@@ -111,9 +111,9 @@ export default function MapPoints({ changeSelectedMarker }) {
         "Espacios abiertos.",
         "Diferentes accesos.",
         "Abierto 24/7.",
-        "Potencial punto de reunión",
-        "Zonas verdes",
-        "Valor histórico",
+        "Potencial punto de reunión.",
+        "Zonas verdes.",
+        "Valor histórico.",
       ],
     },
   ];

@@ -32,17 +32,17 @@ export const Info = {
         {
             key: 2,
             title: "Evacuar de ser necesario",
-            text: "Una vez concluido el sismo, se debe tomar la decisión de evacuar el edificio o estructura de ser necesario. Si el sismo es de una gran magnitud (o terremoto) por seguridad la mejor decisión es evacuar.",
+            text: "Una vez concluido el sismo, se debe tomar la decisión de evacuar el edificio o estructura, de ser necesario. Si el sismo es de una gran magnitud (o terremoto), por seguridad la mejor decisión es evacuar.",
         },
         {
             key:3,
             title: "Diríjase a la zona segura",
-            text: "Identifique la zona segura mas cercana a su ubicación y dirija al grupo de personas que se encuentren con usted a esa zona.",
+            text: "Identifique la zona segura más cercana a su ubicación y dirija al grupo de personas que se encuentren con usted en esa zona.",
         },
         {
             key: 4,
             title: "Contactar a las autoridades",
-            text: "Si alguna persona se encuentra herida, de gravedad amarilla o roja, comuníquese con las autoridades pertinentes, de no ser necesario, no lo haga para no saturar las líneas telefónicas.",
+            text: "Si alguna persona se encuentra herida, de gravedad amarilla o roja, comuníquese con las autoridades pertinentes; de no ser necesario, no lo haga para no saturar las líneas telefónicas.",
         },
     ],
 
@@ -55,7 +55,7 @@ export const Info = {
         {
             key: 2,
             title: "Inspección de servicios básicos",
-            text: "Se debe de inspeccionar todas las instalaciones eléctricas, de gas, agua, para tener conocimiento de como desconectar los servicios en caso de una emergencia.",
+            text: "Se deben inspeccionar todas las instalaciones eléctricas, de gas, agua, para tener conocimiento de cómo desconectar los servicios en caso de una emergencia.",
         },
         {
             key: 3,

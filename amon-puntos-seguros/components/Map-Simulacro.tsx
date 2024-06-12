@@ -139,7 +139,7 @@ export default function MapAPI({ changePosUrl }) {
     changePosUrl(destiny);
 
     return (
-        <div className="w-full z-0 h-[400px]">
+        <div className="w-full z-0 h-[200px] md:h-[250px]">
             <div className="w-[100%] h-[100%]">
                 <MapContainer
                     className="w-[100%] h-[100%]"

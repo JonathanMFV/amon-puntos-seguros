@@ -4,8 +4,8 @@ import { siteConfig } from "./site";
 export default function Navbar() {
     return (
         <>
-            <div className="navbar bg-base-150 fixed w-full z-50 top-0 bg-black">
-                <div className="navbar-start flex gap-x-4">
+            <div className="navbar text-neutral-content bg-black fixed w-full z-50 top-0 lg:px-[60px] xl:px-[180px]">
+                <div className="navbar-start flex">
                     <div className="dropdown">
                         <div
                             tabIndex={0}
@@ -39,17 +39,14 @@ export default function Navbar() {
                         </ul>
                     </div>
                     <a className="font-bold text-xs sm:text-sm md:text-md lg:text-lg">
-                        AmonPuntosSeguros
+                        AmónPuntosSeguros
                     </a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="menu menu-horizontal">
                         {siteConfig.navItems.map((i) => (
                             <li key={i.href}>
-                                <a
-                                    href={i.href}
-                                    className="rounded-lg gap-x-3"
-                                >
+                                <a href={i.href} className="rounded-lg">
                                     {i.label}
                                 </a>
                             </li>

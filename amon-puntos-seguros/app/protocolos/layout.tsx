@@ -1,13 +1,13 @@
 export default function ProtocolosLayout({
-	children,
+    children,
 }: {
-	children: React.ReactNode;
+    children: React.ReactNode;
 }) {
-	return (
-		<section>
-			<div>
-				{children}
-			</div>
-		</section>
-	);
+    return (
+        <section>
+            <div data-theme="black" className="bg-black">
+                {children}
+            </div>
+        </section>
+    );
 }

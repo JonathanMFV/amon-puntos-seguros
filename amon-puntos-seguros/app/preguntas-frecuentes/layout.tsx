@@ -4,7 +4,7 @@ export default function PreguntasFrecuentesLayout({
     children: React.ReactNode;
 }) {
     return (
-        <section data-theme="black">
+        <section data-theme="black" className="bg-black">
             <div>{children}</div>
         </section>
     );

@@ -4,10 +4,8 @@ export default function PuntosSegurosLayout({
 	children: React.ReactNode;
 }) {
 	return (
-		<section data-theme="black">
-			<div>
-				{children}
-			</div>
+		<section data-theme="black" className="bg-black">
+			{children}
 		</section>
 	);
 }

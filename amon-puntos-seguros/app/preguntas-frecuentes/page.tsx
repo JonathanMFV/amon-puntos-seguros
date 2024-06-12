@@ -4,7 +4,7 @@ import Questions from "@/components/questions-widget";
 
 export default function Page() {
     return (
-        <section className="flex flex-col gap-4 py-8 md:py-10 mt-10 mx-4 sm:mx-12 md:mx-20 lg:mx-32">
+        <section className="flex flex-col py-32 px-[50px] sm:px-[120px] lg:py-40 lg:px-[60px] xl:px-[180px]">
             {/* Titulo */}
             <div className="flex">
                 <p className={title()}>Preguntas frecuentes</p>
