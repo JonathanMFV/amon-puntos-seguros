@@ -11,7 +11,7 @@ export const siteConfig = {
             href: "/puntos-seguros",
         },
         {
-            label: "Mapa Sismologico",
+            label: "Mapa Sismológico",
             href: "/mapa-sismos",
         },
         {

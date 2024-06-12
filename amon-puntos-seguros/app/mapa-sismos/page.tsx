@@ -22,19 +22,19 @@ const Page = () => {
     }, []);
 
     return (
-        <section className="flex flex-col gap-4 py-8 md:py-10 mt-10 mx-4 sm:mx-12 md:mx-20 lg:mx-32">
+        <section className="flex flex-col py-32 px-[50px] sm:px-[120px] lg:py-40 lg:px-[60px] xl:px-[180px]">
             <h1 className={title({ size: "sm" })}>Mapa de Sismos Recientes</h1>
             <div className="z-0">
                 <MapSismos listOfMaps={listOfMaps} />
             </div>
-            <h4>
-                Extraido de:
+            <h4 className="mt-2">
+                Extraido de:&nbsp;
                 <a
                     href="http://www.ovsicori.una.ac.cr/sistemas/sentidos_map/index.php"
                     target="_blank"
+                    className="hover:text-color-green-three"
                 >
-                    {" "}
-                    ovsicori{" "}
+                    http://www.ovsicori.una.ac.cr/sistemas/sentidos_map/index.php
                 </a>
             </h4>
         </section>

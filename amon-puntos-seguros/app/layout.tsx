@@ -13,8 +13,8 @@ export default function RootLayout({
     children: React.ReactNode;
 }>) {
     return (
-        <html className="bg-black mb-32" lang="en">
-            <body className={inter.className}>
+        <html className="bg-black mb-32"  lang="en">
+            <body>
                 <Navbar />
                 {children}
                 <Footer />

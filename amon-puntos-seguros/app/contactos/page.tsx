@@ -5,7 +5,7 @@ import clsx from "clsx";
 
 export default function Page() {
     return (
-        <section className="flex flex-col gap-4 py-8 md:py-10">
+        <section className="flex flex-col py-32 px-[50px] sm:px-[120px] lg:py-40 lg:px-[60px] xl:px-[180px]">
             <div className="flex flex-row justify-around items-center">
                 <div className="flex flex-col sm:items-start items-center">
                     <div className="flex flex-row">

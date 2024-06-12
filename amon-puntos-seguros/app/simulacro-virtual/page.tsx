@@ -1,7 +1,7 @@
 "use client";
 
 import { title, subtitle } from "@/components/primitives";
-import MapAPI from "@/components/Map";
+import MapAPI from "@/components/Map-Simulacro";
 import React, { useEffect, useState } from "react";
 
 export default function Page() {
@@ -15,7 +15,7 @@ export default function Page() {
         setPos(value);
     };
     return (
-        <section className="flex flex-col gap-4 py-8 md:py-10 mt-10 bg-black text-white">
+        <section className="flex flex-col bg-black text-white py-32 px-[50px] sm:px-[120px] lg:py-40 lg:px-[60px] xl:px-[180px]">
             {/* Section info */}
             <div className="flex flex-col justify-center items-center">
                 <div>
@@ -68,12 +68,12 @@ export default function Page() {
                 <div className="flex items-center justify-center w-2 h-2 rounded-full border border-color-green-three mt-2" />
                 <div className="flex flex-row justify-center items-center w-[100%] md:w-[70%] lg:w-[50%] mt-4">
                     <div className="card w-[100%] lg:w-[90%] h-[100%] bg-base-100 shadow-[0_0px_15px_-0px_rgba(0,0,0,0.3)] hover:shadow-[0_0px_30px_-0px_rgba(0,0,0,0.4)] hover:shadow-color-green-three transition-shadow duration-300 shadow-color-green-one border border-color-green-one rounded-lg">
-                        <div className="card-body items-center">
+                        <div className="flex card-body items-center">
                             <h2 className="card-title text-center text-color-green-one text-xs md:text-base">
                                 Evacue al punto seguro mas cercano
                             </h2>
 
-                            <MapAPI changePosUrl={onChangePosUrl} />
+                            <MapAPI changePosUrl={onChangePosUrl}/>
                             <button className="btn border-color-green-one text-color-green-one hover:bg-color-green-one hover:text-black btn-xs sm:btn-sm rounded-lg bg-[7ac7a9]">
                                 <a
                                     href={`https://www.google.com/maps/dir/?api=1&destination=${pos.latitude},${pos.longitude}`}

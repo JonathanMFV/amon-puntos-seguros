@@ -1,12 +1,12 @@
 export default function Footer() {
     return (
         <div className="bg-black text-white">
-            <div className="flex flex-row justify-start mx-12 sm:mx-20 lg:mx-32">
+            <div className="flex flex-row justify-start px-[50px] sm:px-[120px] lg:px-[60px] xl:px-[180px]">
                 <div className="flex-col w-full">
                     <div className="flex flex-col lg:flex-row gap-20 md:gap-36">
                         <div>
                             <p className="text-md font-bold md:text-xl">
-                                AmonPuntosSeguros
+                                AmónPuntosSeguros
                             </p>
                         </div>
                         <div className="flex flex-col sm:flex-row gap-20 md:gap-36">
@@ -131,7 +131,7 @@ export default function Footer() {
                     </div>
                     <div className="flex w-[100%] h-10 border-t mt-32 items-center justify-center">
                         <p className="text-[10px] md:text-base">
-                            Copyright © Amon Cultural
+                            Copyright © Amón Cultural
                         </p>
                     </div>
                 </div>

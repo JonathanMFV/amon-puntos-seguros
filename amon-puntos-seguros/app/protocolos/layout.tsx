@@ -1,9 +1,9 @@
 export default function ProtocolosLayout({
-	children,
+    children,
 }: {
-	children: React.ReactNode;
+    children: React.ReactNode;
 }) {
-	return (
+    return (
         <section>
             <div data-theme="black">{children}</div>
         </section>
