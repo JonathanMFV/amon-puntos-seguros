@@ -8,3 +8,6 @@ Implementación de una página web informativa para la comunidad de San José, B
 - Información de prevención a la comunidad en caso de una emergencia.
 - Simulacro virtual.
 - Mapa de Sismos Sentidos.
+
+# Grade
+100
